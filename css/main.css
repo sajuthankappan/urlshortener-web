@@ -1,0 +1,81 @@
+﻿* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+header {
+    padding: 5px 0px
+}
+
+body {
+  padding: 20px 5%;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+}
+
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+
+form > div > label {
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+
+form > div > div {
+  width: 75%;
+  float: right;
+}
+
+input[type=text],
+input[type=url] {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+input[type=text],
+input[type=url] {
+  width: 100%;
+}
+
+input[type=text]:focus,
+input[type=url]:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label {
+	width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=url] {
+    width: 100%; 
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label {
+  	text-align: right;
+  }
+}
